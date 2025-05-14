@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #000000 0%, #003333 100%);
+  --primary-color: #00e5e5;
+  --secondary-color: #111111;
+  --btn-radius: 2px;
+  --shadow-color: rgba(0, 229, 229, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.login-form {
+  width: 320px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--btn-radius);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #000;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--btn-radius);
+  color: var(--primary-color);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--btn-radius);
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-form button:hover {
+  transform: scale(1.02);
+}
+
+.error {
+  color: #ff3366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid var(--primary-color);
+  text-align: left;
+}
+
+th {
+  background: rgba(0, 229, 229, 0.1);
+  font-weight: 700;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.btn-green {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-green:hover {
+  transform: scale(1.05);
+}
+
+.btn-red {
+  background: #ff3366;
+  color: #000;
+}
+
+.btn-red:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .login-form, table {
+    width: 100%;
+  }
+}
